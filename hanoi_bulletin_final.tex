@@ -132,11 +132,11 @@ It is natural to ask how far one may perturb the split before the cost balloons.
 \[
   \Delta_k(n) = \bigl(2T_4(k+1)+T_3(n-k-1)\bigr) - \bigl(2T_4(k)+T_3(n-k)\bigr).
 \]
-Positive values of $\\Delta_k(n)$ indicate that increasing $k$ worsens the cost, while negative values suggest that more discs should be parked. The data computed for $n\le 30$ reveal three qualitative regimes:
+Positive values of $\Delta_k(n)$ indicate that increasing $k$ worsens the cost, while negative values suggest that more discs should be parked. The data computed for $n\le 30$ reveal three qualitative regimes:
 \begin{enumerate}
-  \item For $n\\le 8$, every $\\Delta_k(n)$ with $1\\le k\\le \\lfloor n/2\\rfloor$ is non-negative, confirming that balanced choices are optimal.
-  \item Between $9$ and $15$ the sign of $\\Delta_k(n)$ flips exactly once and does so near $k=\\lfloor n/2\\rfloor$. The optimiser therefore shifts right by only one or two discs---parking more discs before the three-peg shuttle---yet this ``tiny'' perturbation already yields $\\rho(13)=1.660$ and $\\rho(15)=2.364$.
-  \item Once $n\\ge 16$ the derivative at the balanced point is decisively negative, so each enforced disc compounds the penalty, culminating in $\\rho(20)=3.879$.
+  \item For $n\le 8$, every $\Delta_k(n)$ with $1\le k\le \lfloor n/2\rfloor$ is non-negative, confirming that balanced choices are optimal.
+  \item Between $9$ and $15$ the sign of $\Delta_k(n)$ flips exactly once and does so near $k=\lfloor n/2\rfloor$. The optimiser therefore shifts right by only one or two discs---parking more discs before the three-peg shuttle---yet this ``tiny'' perturbation already yields $\rho(13)=1.660$ and $\rho(15)=2.364$.
+  \item Once $n\ge 16$ the derivative at the balanced point is decisively negative, so each enforced disc compounds the penalty, culminating in $\rho(20)=3.879$.
 \end{enumerate}
 These calculations underline a moral often repeated in operations research: heuristics with a single degree of freedom remain trustworthy only while their first derivative retains the right sign. Once the derivative flips, one must revisit the modelling assumptions---in this case by embracing the triangular-number splits predicted by Bousch.
 
